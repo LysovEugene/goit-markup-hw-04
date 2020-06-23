@@ -441,21 +441,6 @@ margin-right: 0;
   margin-bottom: 20px;
 }
 
-.copyright {
-  padding-top: 18px;
-  padding-bottom: 21px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-.develop-by {
-  font-size: 12px;
-  line-height: 2;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin: 0;
-
-  color: rgba(255, 255, 255, 0.4);
-}
-
 /* фильтр портфолио */
 
 .section-portfolio {
