@@ -31,17 +31,17 @@
 
         <div class="contacts-list">
           <ul class="site-nav list">
-            <li class="item">
-              <img src="./images/mailicon.svg" alt="электронная-почта" />
-              <a href="mailto:info@devstudio.com" class="link telephone-email"
-                >info@devstudio.com</a
+            <li class="item link">
+              
+              <a href="mailto:info@devstudio.com" class="link telephone-email"> <svg class="icon-email">
+                <use href="./images/symbol-defs.svg#icon-mailicon"></use>
+              </svg>info@devstudio.com</a
               >
             </li>
-            <li class="item">
-              <img src="./images/phoneicon.svg" alt="телефон" />
-              <a href="tel:+380961111111" class="link telephone-email"
-                >+38 096 111 11 11</a
-              >
+            <li class="item">            
+              <a href="tel:+380961111111" class="link telephone-email"> 
+                <div><svg class="icon-phoneicon"><use href="./images/symbol-defs.svg#icon-phoneicon"></use></svg></div> 
+                <div>+38 096 111 11 11</div></a>
             </li>
           </ul>
         </div>
@@ -62,32 +62,49 @@
       <section class="section feuture-container">
         <div class="container">
           <ul class="feature-list list">
-            <li class="item icon-antenna">
-              <svg>
-                <use></href></use>
-              </svg>
-
+            <li class="item">
+              <div class="features-icon"> <svg class="icon-item">
+                <use href="./images/symbol-defs.svg#icon-antenna1 "></use>
+                </use>
+               </svg>
+              </div>
+    
               <h3 class="title">Внимание к деталям</h3>
               <p class="p-feature-list">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="item icon-clock">
+            <li class="item">
+              <div class="features-icon"> <svg class="icon-item">
+                  <use href="./images/symbol-defs.svg#icon-clock1"></use>
+                  </use>
+                </svg>
+              </div>
               <h3 class="title">Пунктуальность</h3>
               <p class="p-feature-list">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="item icon-diagram">
+            <li class="item">
+              <div class="features-icon"> <svg class="icon-item">
+                  <use href="./images/symbol-defs.svg#icon-diagram1"></use>
+                  </use>
+                </svg>
+              </div>
               <h3 class="title">Планирование</h3>
               <p class="p-feature-list">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="item icon-astronaut">
+            <li class="item">
+              <div class="features-icon"> <svg class="icon-item">
+                  <use href="./images/symbol-defs.svg#icon-astronaut1"></use>
+                  </use>
+                </svg>
+              </div>
               <h3 class="title">Современные технологии</h3>
               <p class="p-feature-list">
                 Значимость этих проблем настолько очевидна, что реализация
@@ -354,4 +371,15 @@
     </footer>
   </body>
 </html>
-<dir></dir>
+
+<!-- 
+li class="item link">
+<svg class="icon-email">
+  <use href="./images/symbol-defs.svg#icon-mailicon"></use>
+</svg>
+<a href="mailto:info@devstudio.com" class="link telephone-email"> info@devstudio.com</a>
+</li> -->
+
+<a href="mailto:info@devstudio.com" > <svg class="icon-email">
+  <use href="./images/symbol-defs.svg#icon-mailicon"></use>
+</svg> <span>info@devstudio.com</span></a>

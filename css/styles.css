@@ -80,11 +80,14 @@ body {
 .site-nav .item {
   /* outline: 3px solid tomato; */
   margin-right: 50px;
+  display: flex;
+  align-items: center;
 }
 .site-nav .item:last-child {
   margin: 0;
 }
 .site-nav .link {
+  display: flex;
   color: var(--title-text-color);
   text-decoration: none;
   font-family: Roboto;
@@ -93,13 +96,28 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+.icon-email {
+  display: flex;
+  width: 16px;
+  height: 11px;
+  fill: var(--primary-text-color);
+}
+
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
+  fill: aqua;
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.icon-phoneicon {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  fill: var(--primary-text-color);
 }
 
 .list {
@@ -234,6 +252,30 @@ margin-right: 0;
 .p-feature-list {
   margin: 0;
   padding: 0;
+}
+.features-icon {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background-color: var(--secondary-bcr);
+  border-radius: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+.icon-item {
+  display: flex;
+  width: 70px;
+  height: 70px;
+  fill: var(--accent-color);
 }
 
 /* .feature-list .item::before {
