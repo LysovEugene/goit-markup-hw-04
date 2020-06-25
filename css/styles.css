@@ -236,20 +236,20 @@ margin-right: 0;
   padding: 0;
 }
 
-.feature-list .item::before {
+/* .feature-list .item::before {
   content: "";
   display: block;
   height: 120px;
   width: 270px;
   background-color: var(--secondary-bcr);
-  /* background-image: url(../images/antenna1.svg); */
+  
   background-repeat: no-repeat;
   background-position: center;
   margin-bottom: 30px;
   border-radius: 4px;
-}
+} */
 
-.item.icon-antenna::before {
+/* .item.icon-antenna::before {
   background-image: url(../images/antenna1.svg);
 }
 .item.icon-clock::before {
@@ -260,7 +260,7 @@ margin-right: 0;
 }
 .item.icon-astronaut::before {
   background-image: url(../images/astronaut1.svg);
-}
+} */
 /* чем мы занимаемся */
 .we-do-list {
   display: flex;
