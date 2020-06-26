@@ -96,17 +96,17 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
-.icon-email {
+/*.icon-email {
   display: flex;
   width: 16px;
   height: 11px;
   fill: var(--primary-text-color);
-}
+}*/
 
 .site-nav .link:hover,
 .site-nav .link:focus {
   color: var(--accent-color);
-  fill: aqua;
+  fill: var(--accent-color);
 }
 
 .site-nav .link.current {
@@ -117,7 +117,6 @@ body {
   display: inline-block;
   width: 10px;
   height: 15px;
-  fill: var(--primary-text-color);
 }
 
 .list {
@@ -125,9 +124,22 @@ body {
   margin: 0;
   padding: 0;
 }
-.site-nav .telephone-email {
+.site-nav .phone-email {
   color: var(--primary-text-color);
 }
+
+.phone-email:hover {
+  color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.phone-email_img {
+  display: inline-block;
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
 .main-nav .contacts-list {
   margin-left: auto;
 }
@@ -263,14 +275,6 @@ margin-right: 0;
   justify-content: center;
 }
 
-a,
-a:link,
-a:visited,
-a:hover,
-a:active {
-  text-decoration: none;
-}
-
 .icon-item {
   display: flex;
   width: 70px;
@@ -371,13 +375,28 @@ a:active {
 .social-network {
   display: flex;
   justify-content: center;
-
   margin-right: 10px;
 }
+.social-network-link {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
 
-.social-network .link:hover,
-.social-network .link:focus {
-  color: var(--accent-color);
+.icon-social-link {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+}
+.social-network-link:hover {
+  background-color: var(--accent-color);
+}
+.social-network-link:hover .icon-social-link {
+  fill: white;
 }
 
 .our-team-list .title {
@@ -488,6 +507,47 @@ a:active {
   margin-right: 10px;
 }
 
+.icon-social-link-footer {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+
+.social-network-link-footer {
+  background: rgba(255, 255, 255, 0.1);
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.social-network-link-footer:hover {
+  background-color: var(--accent-color);
+}
+
+/* .social-network-link {
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.icon-social-link=footer {
+  width: 20px;
+  height: 20px;
+  fill: white;
+}
+.social-network-link:hover {
+  background-color: var(--accent-color);
+}
+.social-network-link:hover .icon-social-link {
+  fill: white;
+} */
 .footer-list .link {
   color: var(--title-text-color);
   text-decoration: none;
