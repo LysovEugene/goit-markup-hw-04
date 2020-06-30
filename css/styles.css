@@ -108,6 +108,11 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current::after {
+  content: "";
+  width: 100%;
+}
+
 .list {
   list-style: none;
   margin: 0;
@@ -316,7 +321,7 @@ margin-right: 0;
   justify-content: center;
 
   color: var(--primary-white-color);
-  background-color: var(--primary-text-color);
+  background-color: rgba(47, 48, 58, 0.8);
   text-transform: uppercase;
   margin: 0;
   padding: 0;
@@ -326,10 +331,15 @@ margin-right: 0;
   line-height: 1.14;
   text-align: center;
   min-height: 70px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  right: 0;
 }
 
 .we-do-list .item {
   margin-right: 30px;
+  position: relative;
 }
 .we-do-list .item:last-child {
   margin-right: 0;
